@@ -7,7 +7,7 @@ This release should be viewed in the following order (3 Steps):
 **Step 1:**
 
 The Data Collection/Creation, which can be viewed in the 'Data Collection/Creation folder'. It contains the 7 files that make up the whole data collection process. In order to create the final "supermarket_data.csv" file for the modeling, we followed the following process:
-1. First download the "Superstore.csv" file.
+1. First download the csv file from https://www.kaggle.com/datasets/heeraldedhia/groceries-dataset?resource=download.
 2. Then download the "Create all data.py file". Open the file and run it. This will use the "Superstore.csv" file to create, "user_info.csv", "product_info.csv" and "interaction_data.csv".
 3. Then, download "Create Supermarket_data.py". Open the file and run it. This will use the previously created 3 files to create our final data file "supermarket_data.csv".
 
