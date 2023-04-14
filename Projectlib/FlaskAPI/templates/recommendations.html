@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Recommendations</title>
+  </head>
+  <body>
+    <h1>Product Recommendations for User {{ user_id }}:</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Product ID</th>
+          <th>Product Name</th>
+          <th>Prediction</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for recommendation in recommendations %}
+        <tr>
+          <td>{{ recommendation['Product ID'] }}</td>
+          <td>{{ recommendation['Product Name'] }}</td>
+          <td>{{ recommendation['Prediction'] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
