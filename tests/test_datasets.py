@@ -61,8 +61,8 @@ def test_interaction_timestamp_range():
     interactions = pd.read_csv('interaction_data.csv')
     timestamp_min = datetime.datetime.strptime(interactions['Interaction Timestamp'].min(), '%Y-%m-%d %H:%M:%S')
     timestamp_max = datetime.datetime.strptime(interactions['Interaction Timestamp'].max(), '%Y-%m-%d %H:%M:%S')
-    assert timestamp_min.year >= 2021
-    assert timestamp_max.year <= 2023
+    assert timestamp_min.year >= 2023
+    assert timestamp_max.year <= 2025
 
 
 if __name__ == '__main__':
