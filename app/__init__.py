@@ -7,7 +7,7 @@ app = Flask(__name__)
 model = joblib.load('model.joblib')
 test = pd.read_csv('test_data.csv')
 
-@app.route('/', methods=['GET'])
+@app.route('/')
 def index():
     return render_template('index.html')
 
