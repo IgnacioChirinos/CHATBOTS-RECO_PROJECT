@@ -1,3 +1,5 @@
+
+
 import pandas as pd
 data = pd.read_csv('data.csv')
 def recommend_for_user(model, test_data, user_id, num_recs): 
@@ -14,3 +16,4 @@ def recommend_for_user(model, test_data, user_id, num_recs):
     
     # Return the top recommendations for the user
     return top_k_with_titles.head(num_recs)
+

@@ -7,7 +7,8 @@ app = Flask(__name__)
 model = joblib.load('model.joblib')
 test = pd.read_csv('test_data.csv')
 
-@app.route('/', methods=['GET'])
+
+@app.route('/')
 def index():
     return render_template('index.html')
 
@@ -22,9 +23,6 @@ def get_recommendations():
     recs = recommend_for_user(model, test, user_id, 10)
     recs_dict = recs.to_dict('records')
     return render_template('recommendations.html', recommendations=recs_dict, user_id=user_id)
-
-
-    
 
 if __name__ == '__main__':
     app.run(debug=True,use_reloader=False)
